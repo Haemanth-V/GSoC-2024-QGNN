@@ -1,9 +1,9 @@
-# Quantum-enhanced Graph Neural Networks
+# Quantum Graph Neural Networks
 ### A Google Summer of Code (GSoC) 2024 project with the ML4SCI organization
 
 ![image](https://github.com/user-attachments/assets/a3f77bf5-bf09-4759-b770-ab8cf2208ea0)
 
-Jet tagging is a particularly important task at CERN in order to identify useful signals from the billions of data generated every second. Graph Neural Networks are particularly suitable for the task due to the sparse and heterogenous nature of the data produced. This project aims to develop scalable quantum-enhanced graph neural networks and analyze their performance for the jet tagging task. 
+Jet tagging is a particularly important task at CERN in order to identify useful signals from the billions of data generated every second. Graph Neural Networks are particularly suitable for the task due to the sparse and heterogenous nature of the data produced. This project aims to develop scalable quantum graph neural networks and analyze their performance for the jet tagging task. 
 
 For a detailed explanation of the proposed approach and the dataset, refer to the [blog](https://medium.com/@haemanth10/quantum-enhanced-graph-neural-networks-4c1270c2d094)
 
@@ -22,14 +22,14 @@ We use the [PyTorch geometric](https://pytorch-geometric.readthedocs.io/en/lates
     * `models` folder contains all the GNN models implemented
         * `GCNConv_Layers` folder contains the custom implementations of the graph convolution operations built using PyTorch Geometric's Message Passing interface
             * `Custom_GCN_Conv.py` implements the classical graph convolution operation
-            * `QGCN_Conv.py` implemented the quantum-enhanced graph convolution operation
+            * `QGCN_Conv.py` implemented the quantum-classical graph convolution operation
         * `Quantum_classifiers` folder contains all the quantum classifier architectures we have used
             * `MPS.py` is the implementation of the Matrix Product State quantum classifier [[2]](#2)
             * `TTN.py` is the implementation of the Tensor Tree Network quantum classifier [[3]](#3)
         * `PyTorch_GCN.py` is the traditional implementation of GCN in PyTorch Geometric using the inbuilt graph convolution layers
         * `Custom_GCN.py` is a classical graph convolutional neural network built using the custom graph convolution layers we have implemented
         * `QNN_Node_Embedding.py` is a typical Quantum Neural Network circuit
-        * `Quantum_GCN.py` is the quantum-enhanced graph convolutional network
+        * `Quantum_GCN.py` is the quantum-classical graph convolutional network
     * `training` folder contains the codes required to train and evaluate the models
         * `config.json` contains the model-specific details like dimensions of the layers to instantiate the GNN models.
         * `train.py`contains the training, evaluation and testing functions to optimize the model parameters
