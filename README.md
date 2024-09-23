@@ -5,7 +5,7 @@
 
 Jet tagging is a particularly important task at CERN in order to identify useful signals from the billions of data generated every second. Graph Neural Networks are particularly suitable for the task due to the sparse and heterogenous nature of the data produced. This project aims to develop scalable quantum-enhanced graph neural networks and analyze their performance for the jet tagging task. 
 
-For a detailed explanation of the proposed approach and the dataset, refer to the [blog]([https://medium.com/@haemanth10/quantum-enhanced-graph-neural-networks-4c1270c2d094](https://medium.com/@haemanth10/quantum-graph-neural-networks-9cde9613a8d5))
+For a detailed explanation of the proposed approach and the dataset, refer to the [blog](https://medium.com/@haemanth10/quantum-graph-neural-networks-9cde9613a8d5)
 
 ## Dataset
 We are primarily working with the Pythia8 Quark and Gluon jets dataset [[1]](#1)
